@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./Images/cool-background.png);
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* body::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(./Images/news_3.jpg);
+    opacity: o.;
+} */
+
+#contents {
+    background-image: linear-gradient(to bottom, #ecf7fb, whitesmoke, #ecf7fb);
+    width: 45vw;
+    height: auto;
+    margin: auto;
+    border-radius: 4rem;
+    box-shadow: 2px 2px 4px red;
+}
+
+#contents:hover {
+    box-shadow: 2px 2px 4px rgb(51, 7, 7);
+}
+
+#top {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    line-height: 1rem;
+    text-align: center;
+}
+
+#title {
+    color: #9d1071;
+    font-size: 3rem;
+}
+
+#description {
+    font-size: 1rem;
+    color: #691e9b;
+}
+
+#survey-form {
+    max-width: 30vw;
+    margin: auto;
+    color: #380957;
+}
+
+#name, #email, #number, #dropdown, #submit{
+    height: 6vh;
+    width: 29vw;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.name {
+    padding-top: 4rem;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.email, .number, .dropdown-form {
+    padding-top: 1.5rem;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.radio-form {
+    padding-top: 2rem;
+}
+
+.checkbox-form, .textarea-form {
+    padding-top: 3rem;
+}
+
+#textarea {
+    margin-top: 1rem;
+    height: 15vh;
+    width: 29vw;
+    border: none;
+}
+
+.checkbox-form div {
+    line-height: 3rem;
+}
+button {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-image: linear-gradient(to bottom, #b960f5, #dd21a2);
+    border-radius: 1rem;
+}
+
+button:hover {
+    background-image: linear-gradient(to bottom, #d8aef5, #d44c7a);
+    box-shadow: 2px 2px 4px grey;
+}
+
+#submit {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ecf7fb;
+}
+
+#submit:hover {
+    color: rgb(139, 60, 8);
+}
+
+@media screen and (max-width: 737px) {
+    #title {
+        color: #9d1071;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    
+    #description {
+        font-size: 14px;
+        color: #691e9b;
+    }
+    
+    #contents {
+        background-image: linear-gradient(to bottom, #ecf7fb, whitesmoke, #ecf7fb);
+        width: 70vw;
+        height: auto;
+        margin: auto;
+        border-radius: 4rem;
+        box-shadow: 2px 2px 4px red;
+    }
+}

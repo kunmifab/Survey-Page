@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <div id="top">
+    <h1 id="title">Ten Plus Survey Page</h1>
+    <p id="description">Thank you as you take your time giving us this feedback.</p>
+    </div>
+
+  <div id="contents">
+    <form id="survey-form">
+      <div class="name">
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" id="name" placeholder="Enter your name here"><br>
+      </div>
+
+      <div class="email">
+        <label for="email" id="email-label">Email</label><br>
+        <input type="email" id="email" placeholder="Enter your Email here"><br>
+      </div>
+
+      <div class="number">
+        <label for="number" id="number-label">Age</label><br>
+        <input type="number" id="number" placeholder="Age" min="18" max="99"><br>
+      </div>
+      
+      <div class="dropdown-form">  
+        <label for="dropdown">Who is your favourite tutor so far?</label><br>
+            <select name="dropdown" id="dropdown"><br>
+            <option value="Mr. Abdullah">Mr. Abdullah</option>
+            <option value="Mr. Jibola">Mr. Jibola</option>
+            <option value="Miss Elizabeth">Miss Elizabeth</option>
+            <option value="Mr. Ahmad">Mr. Ahmad</option>
+        </select>
+        </div>
+
+        <div class="radio-form">  
+        <p>Woud you recommend Ten Plus to your friends based on your experience?</p> 
+        <input type="radio" value= "Yes" name="yesno" id="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" value= "No" name="yesno" id="no">
+        <label for="no">No</label>
+        </div>
+
+        <div class="checkbox-form">
+        <p>What courses do you love the most so far in your time spent in Ten Plus?</p>
+        <div>
+            <input type="checkbox" value="Web development" id="web" name="courses" >
+            <label for="web">Web Development</label><br>
+            <input type="checkbox" value="Graphics designing" id="graphics" name="courses" >
+            <label for="graphics">Graphics Designing</label><br>
+            <input type="checkbox" value="bootcamp" id="boot" name="courses" >
+            <label for="boot">BootCamp</label><br>
+            <input type="checkbox" value="ccna" id="ccna" name="courses" >
+            <label for="ccna">CCNA</label><br>
+            <input type="checkbox" value="inverter technology" id="inverter" name="courses" >
+            <label for="inverter">Inverter Technology</label><br>
+            <input type="checkbox" value="Laptop Repair" id="laptop" name="courses" >
+            <label for="laptop">Laptop Repair</label><br>
+            <input type="checkbox" value="Desktop repair" id="desktop" name="courses" >
+            <label for="desktop">Desktop Repair</label>
+        </div>
+        </div>
+
+        <div class="textarea-form">
+            <label for="textarea">If there is any thing you think we can improve, kindly let us know and we will try to adjust.</label><br>
+            <textarea name="comments" id="textarea" cols="40" rows="10" placeholder="Write your comments here"></textarea>
+        </div>
+
+        <button id="submit">Submit</button>
+    </form>
+ </div>
+</body>
+</html>
